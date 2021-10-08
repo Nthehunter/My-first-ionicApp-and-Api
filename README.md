@@ -3,6 +3,8 @@ This is my first proyect for PGL and PGV, in this proyect the frontend use Ionic
 
 Backend funcionando:
 
+Documentación de la API: https://www.postman.com/nthehunter/workspace/task-backend/documentation/17847980-ad7a29e0-de99-470d-925a-9bbf01701109
+
 POST con Postman:
 ![alt text](/Capturas/POST.png)
 
