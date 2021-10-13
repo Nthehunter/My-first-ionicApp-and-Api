@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Things to do
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Things to do
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container-fluid">
+
+    <button  type="button" class="btn-flotante" (click)="openIonModalAdd()">Añadir una nueva tarea</button>
+
+    <ion-list>
+      <div *ngFor="let t of task" class="row">
+
+        <div class="col"> </div>
+        <div class="col">
+          <h2>
+            Tarea: {{ t.name }}
+          </h2>
+
+          <p> Descripción: {{t.description}}</p>
+
+
+
+          <h1> Estado de la tarea: </h1>
+          <div class="state">
+
+            <div *ngIf="t.done===1">
+              <ion-img src="assets/images/Check.png" class="check"></ion-img>
+            </div>
+            <div class="check" *ngIf="t.done===0">
+              <ion-img src="assets/images/x.png" class="check"></ion-img>
+            </div>
+
+          </div>
+
+
+          <button type="button" class="btn btn-primary" (click)="openIonModal(t.id, t.name, t.description, t.done)">Modificar tarea</button>
+
+          <button type="button" class="btn  btn-danger" (click)="deleteTask(t.id)"> Eliminar tarea </button>
+          <button type="button" class="btn btn-success" *ngIf="t.done===0" (click)="completedTask(t.id)">Tarea completada! </button>
+
+
+         
+        </div>
+        <div class="div-check">
+
+        </div>
+        <div class="col"> </div>
+
+      </div>
+
+    </ion-list>
+
+
+  </div>
+
+
+
+
+</ion-content>

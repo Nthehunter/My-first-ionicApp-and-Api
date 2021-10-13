@@ -6,7 +6,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import com.Natanael.task.entity.dao.ITaskDao;
+
 import com.Natanael.task.entity.models.Task;
 
 @Service
@@ -20,6 +22,8 @@ public class TaskServiceImpl implements ITaskService {
 		
 		return (List<Task>) taskDao.findAll();
 	}
+	
+
 
 	@Override
 	public Optional<Task> getOne(long id) {
@@ -82,6 +86,8 @@ public class TaskServiceImpl implements ITaskService {
 		
 		return taskDao.findById(id);
 	}
+
+
 	
 	
 }

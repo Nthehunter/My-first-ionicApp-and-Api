@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.CrossOrigin"/>
+    <fullyQualifiedTypeName name="com.Natanael.user.entity.services.IUserService"/>
+    <fullyQualifiedTypeName name="com.Natanael.user.entity.models.User"/>
+    <fullyQualifiedTypeName name="com.Natanael.user.entity.dao.IUserDao"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.HTG.user.entity.dao.IUserDao"/>
+    <fullyQualifiedTypeName name="com.HTG.user.entity.services.IUserService"/>
+    <fullyQualifiedTypeName name="com.HTG.user.entity.models.User"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.HTG.user.entity.dao.IProductDao"/>
+    <fullyQualifiedTypeName name="com.HTG.user.entity.services.IProductService"/>
+    <fullyQualifiedTypeName name="com.HTG.user.entity.models.Product"/>
 </qualifiedTypeNameHistroy>

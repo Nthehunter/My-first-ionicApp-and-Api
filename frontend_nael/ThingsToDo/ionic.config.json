@@ -1,0 +1,7 @@
+{
+  "name": "ThingsToDo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

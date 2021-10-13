@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modificar tarea </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+
+        
+
+        <h1> Introduce nombre de la tarea: </h1>
+        <ion-item>
+          <ion-label floating> </ion-label>
+          <ion-input type="text" [(ngModel)]="taskName" placeholder="{{Nombre}}"></ion-input>
+        </ion-item>
+
+
+        <h1> Introduce descripción de la tarea: </h1>
+
+        <ion-item>
+
+
+          <ion-input type="text" [(ngModel)]="taskDescription" placeholder="{{Description}}"></ion-input>
+
+        </ion-item>
+
+        <h1> Introduce el estado de la tarea (1=hecho / 0=No hecho): </h1>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="taskDone" placeholder="{{Done}}"></ion-input>
+        </ion-item>
+
+        <br>
+
+        <h1 *ngIf="this.visible === true" > Ha habido un error!</h1>
+        <h1 *ngIf="this.visible2 === true" > Todo correcto!!</h1>
+
+    
+        <ion-button type="button" (click)="post(this.Id)">Actualizar tarea </ion-button>
+        <ion-button (click)="closeModel()">Cerrar formulario</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

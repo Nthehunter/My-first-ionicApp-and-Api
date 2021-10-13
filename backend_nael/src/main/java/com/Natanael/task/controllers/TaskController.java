@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.Natanael.task.entity.models.Task;
 import com.Natanael.task.entity.services.ITaskService;
+
 
 @CrossOrigin(origins = "http://localhost:8100")
 @RestController
@@ -25,10 +27,12 @@ public class TaskController {
 	@Autowired
 	ITaskService taskService;
 	
+	
 	@GetMapping("/Task")
 		public List<Task> getAllTask(){
 		return taskService.getAll();
 		}
+		
 	
 	@PostMapping("/Task")
 	void insert(Task task) {
