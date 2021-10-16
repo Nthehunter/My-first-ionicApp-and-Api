@@ -23,3 +23,4 @@ Frontend funcionando:
 ![alt text](/Capturas/frontend.png)
 
 Para que la aplicación funcione correctamente hay que tener el backend y la base de datos funcionando.
+Importante , también es necesario usar el comando "npm install" en la carpeta del frontend.
