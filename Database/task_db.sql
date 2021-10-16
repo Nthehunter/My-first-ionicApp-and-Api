@@ -19,6 +19,16 @@
 -- Dumping data for table `task`
 --
 
+create database db_task;
+use db_task;
+
+create table task (
+idTask int auto_increment primary key,
+Name varchar(40) not null,
+Description varchar(80),
+Done boolean not null
+);
+
 LOCK TABLES `task` WRITE;
 /*!40000 ALTER TABLE `task` DISABLE KEYS */;
 INSERT INTO `task` VALUES (1,'Hacer la API para clase','Hay que terminar una API para PGL',0),(2,'Hacer la una app para AED','Hay que hacer una APP para AED en grupo',0),(3,'Aprobar este segundo año',' ',0),(12,'Probar esta API tan chida','Son solo pruebas',1);
